@@ -22,33 +22,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="container container-header">
+      <div class="header-container container">
         <nav class="header-navigation">
-          <a class="logo logo-header" href="./index.html"
+          <a class="logo logo--header" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <ul class="header__menu header__nav">
-            <li class="header__nav-item is-active">
-              <a class="link header__nav-link" href="#">Agencja</a>
+          <ul class="header-nav header-menu">
+            <li class="header-nav__item is-active">
+              <a class="header-nav__link link" href="#">Agencja</a>
             </li>
-            <li class="header__nav-item">
-              <a class="link header__nav-link" href="./portfolio.html">Portfolio</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="header__nav-item"><a class="link header__nav-link" href="#">Kontakt</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="header__menu header__contact">
-          <li class="header__contact-item">
-            <a class="link header__contact-link" href="mailto:info@devstudio.com"
-              ><svg class="header__contact-icon" width="16" height="12">
+        <ul class="header-contact header-menu">
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="mailto:info@devstudio.com"
+              ><svg class="header-contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header__contact-item">
-            <a class="link header__contact-link" href="tel:+48111111111"
-              ><svg class="header__contact-icon" width="10" height="16">
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="tel:+48111111111"
+              ><svg class="header-contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -59,10 +59,10 @@
     </header>
     <main>
       <!--First section - Efektywne Rozwiązania-->
-      <section class="section banner">
+      <section class="banner section">
         <div class="banner__container container">
           <h1 class="banner__title">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
-          <button class="banner__button main-button" type="button" data-modal-open>
+          <button class="banner__button page-button" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
@@ -125,7 +125,7 @@
       <!--Third section - What do we work with-->
       <section class="section">
         <div class="container">
-          <h2 class="section__header">Czym się zajmujemy</h2>
+          <h2 class="section-header">Czym się zajmujemy</h2>
           <ul class="boxes">
             <li class="box">
               <img
@@ -167,9 +167,9 @@
         </div>
       </section>
       <!--Fourth section - Our Team-->
-      <section class="section section-team">
+      <section class="section section--team">
         <div class="container">
-          <h2 class="section__header">Nasz zespół</h2>
+          <h2 class="section-header">Nasz zespół</h2>
           <ul class="employees">
             <li class="employee">
               <img
@@ -181,7 +181,7 @@
               />
               <h3 class="employee__title">John Doe</h3>
               <p class="employee__subtitle">Product Designer</p>
-              <ul class="social-links social-links-employee">
+              <ul class="employee__social-links social-links">
                 <li class="social-link">
                   <button class="social-link__container" type="button">
                     <svg class="social-link__icon" width="20" height="20">
@@ -222,7 +222,7 @@
               />
               <h3 class="employee__title">John Doe</h3>
               <p class="employee__subtitle">Frontend Developer</p>
-              <ul class="social-links social-links-employee">
+              <ul class="employee__social-links social-links">
                 <li class="social-link">
                   <button class="social-link__container" type="button">
                     <svg class="social-link__icon" width="20" height="20">
@@ -263,7 +263,7 @@
               />
               <h3 class="employee__title">John Doe</h3>
               <p class="employee__subtitle">Marketing</p>
-              <ul class="social-links social-links-employee">
+              <ul class="employee__social-links social-links">
                 <li class="social-link">
                   <button class="social-link__container" type="button">
                     <svg class="social-link__icon" width="20" height="20">
@@ -304,7 +304,7 @@
               />
               <h3 class="employee__title">John Doe</h3>
               <p class="employee__subtitle">UI Designer</p>
-              <ul class="social-links social-links-employee">
+              <ul class="employee__social-links social-links">
                 <li class="social-link">
                   <button class="social-link__container" type="button">
                     <svg class="social-link__icon" width="20" height="20">
@@ -341,7 +341,7 @@
       <!--Fifth section - Our Clients-->
       <section class="section">
         <div class="container">
-          <h2 class="section__header">Nasi klienci</h2>
+          <h2 class="section-header">Nasi klienci</h2>
           <ul class="clients">
             <li class="client">
               <div class="client__container">
@@ -390,58 +390,58 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container container-footer">
-        <div class="business-card">
-          <a class="logo logo-footer" href="./index.html"
+      <div class="footer-container container">
+        <div class="footer-section">
+          <a class="logo logo--footer" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="contacts">
-            <ul class="contact-list">
-              <li class="contact">
+            <ul class="contacts__contact-list">
+              <li class="contacts__contact">
                 <a
-                  class="link contact__place"
+                  class="contacts__place link"
                   href="https://goo.gl/maps/wp7BMmqfB1jZp6Ye8"
                   target="_blank"
                 >
                   m. Warszawa, Aleje Jerozolimskie 21
                 </a>
               </li>
-              <li class="contact">
-                <a class="link contact__item" href="mailto:info@example.com">info@example.com</a>
+              <li class="contacts__contact">
+                <a class="contacts__item link" href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="contact">
-                <a class="link contact__item" href="tel:+48111111111">+48 111 111 111</a>
+              <li class="contacts__contact">
+                <a class="contacts__item link" href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="join-us footer-section">
           <h3 class="join-us__title footer-title">dołącz do nas</h3>
-          <ul class="join-us__social-links social-links">
-            <li class="join-us__social-link social-link">
-              <button class="social-link__container social-link__container-footer" type="button">
-                <svg class="social-link__icon-footer" width="20" height="20">
+          <ul class="social-links">
+            <li class="social-link">
+              <button class="social-link__container social-link__container--footer" type="button">
+                <svg class="social-link__icon--footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </button>
             </li>
-            <li class="join-us__social-link social-link">
-              <button class="social-link__container social-link__container-footer" type="button">
-                <svg class="social-link__icon-footer" width="20" height="20">
+            <li class="social-link">
+              <button class="social-link__container social-link__container--footer" type="button">
+                <svg class="social-link__icon--footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </button>
             </li>
-            <li class="join-us__social-link social-link">
-              <button class="social-link__container social-link__container-footer" type="button">
-                <svg class="social-link__icon-footer" width="20" height="20">
+            <li class="social-link">
+              <button class="social-link__container social-link__container--footer" type="button">
+                <svg class="social-link__icon--footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </button>
             </li>
-            <li class="join-us__social-link social-link">
-              <button class="social-link__container social-link__container-footer" type="button">
-                <svg class="social-link__icon-footer" width="20" height="20">
+            <li class="social-link">
+              <button class="social-link__container social-link__container--footer" type="button">
+                <svg class="social-link__icon--footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </button>
@@ -460,7 +460,7 @@
               placeholder="E-mail"
               required
             />
-            <button class="newsletter__button main-button" type="submit">
+            <button class="newsletter__button page-button" type="submit">
               Zapisz się
               <svg class="newsletter__icon-button" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -472,9 +472,9 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="modal__close-btn-container">
-          <button type="button" class="modal__close-btn" data-modal-close>
-            <svg class="modal__close-icon" width="18" height="18">
+        <div class="close-button">
+          <button type="button" class="close-button__button" data-modal-close>
+            <svg class="close-button__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
             </svg>
           </button>
@@ -487,39 +487,39 @@
             <div class="order-form__container">
               <label class="order-form__label" for="user_name">Imię</label>
               <input
-                class="order-form__contact-name order-form__contact-detail"
+                class="order-form__contact-detail"
                 type="text"
                 name="username"
                 id="user_name"
                 required
               />
-              <svg class="order-form__name-icon" width="18" height="18">
+              <svg class="order-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
             <div class="order-form__container">
               <label class="order-form__label" for="user_phone">Telefon</label>
               <input
-                class="order-form__contact-phone order-form__contact-detail"
+                class="order-form__contact-detail"
                 type="tel"
                 name="phone"
                 id="user_phone"
                 required
               />
-              <svg class="order-form__name-icon" width="18" height="18">
+              <svg class="order-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
             <div class="order-form__container">
               <label class="order-form__label" for="user_email">Email</label>
               <input
-                class="order-form__contact-email order-form__contact-detail"
+                class="order-form__contact-detail"
                 type="email"
                 name="email"
                 id="user_email"
                 required
               />
-              <svg class="order-form__name-icon" width="18" height="18">
+              <svg class="order-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
@@ -546,7 +546,7 @@
               <a class="order-form__link" href="#">Politykę Prywatności.</a></label
             >
           </div>
-          <button class="order-form__button main-button" type="submit">Wyślij</button>
+          <button class="order-form__button page-button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>

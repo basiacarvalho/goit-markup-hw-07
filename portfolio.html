@@ -21,34 +21,34 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header header-portfolio">
-      <div class="container container-header">
+    <header class="header-portfolio header">
+      <div class="header-container container">
         <nav class="header-navigation">
-          <a class="logo logo-header" href="./index.html"
+          <a class="logo logo--header" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <ul class="header__menu header__nav">
-            <li class="header__nav-item">
-              <a class="link header__nav-link" href="./index.html">Agencja </a>
+          <ul class="header-nav header-menu">
+            <li class="header-nav__item">
+              <a class="header-nav__link link" href="./index.html">Agencja </a>
             </li>
-            <li class="header_nav-item is-active">
-              <a class="link header__nav-link" href="#">Portfolio</a>
+            <li class="header-nav__item is-active">
+              <a class="header-nav__link link" href="#">Portfolio</a>
             </li>
-            <li class="header_nav-item"><a class="link header__nav-link" href="#">Kontakt</a></li>
+            <li class="header-nav__item"><a class="header-nav__link link" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="header__menu header__contact">
-          <li class="header__contact-item">
-            <a class="link header__contact-link" href="mailto:info@devstudio.com"
-              ><svg class="header__contact-icon" width="16" height="12">
+        <ul class="header-contact header-menu">
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="mailto:info@devstudio.com"
+              ><svg class="header-contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header__contact-item">
-            <a class="link header__contact-link" href="tel:+48111111111"
-              ><svg class="header__contact-icon" width="10" height="16">
+          <li class="header-contact__item">
+            <a class="header-contact__link link" href="tel:+48111111111"
+              ><svg class="header-contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -273,58 +273,58 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container container-footer">
-        <div class="business-card">
-          <a class="logo logo-footer" href="./index.html"
+      <div class="footer-container container">
+        <div class="footer-section">
+          <a class="logo logo--footer" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="contacts">
-            <ul class="contact-list">
-              <li class="contact">
+            <ul class="contacts__contact-list">
+              <li class="contacts__contact">
                 <a
-                  class="link contact__place"
+                  class="contacts__place link"
                   href="https://goo.gl/maps/wp7BMmqfB1jZp6Ye8"
                   target="_blank"
                 >
                   m. Warszawa, Aleje Jerozolimskie 21
                 </a>
               </li>
-              <li class="contact">
-                <a class="link contact__item" href="mailto:info@example.com">info@example.com</a>
+              <li class="contacts__contact">
+                <a class="contacts__item link" href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="contact">
-                <a class="link contact__item" href="tel:+48111111111">+48 111 111 111</a>
+              <li class="contacts__contact">
+                <a class="contacts__item link" href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="join-us footer-section">
           <h3 class="join-us__title footer-title">dołącz do nas</h3>
-          <ul class="join-us__social-links social-links">
-            <li class="join-us__social-link social-link">
-              <button class="social-link__container social-link__container-footer">
-                <svg class="social-link__icon-footer" width="20" height="20">
+          <ul class="social-links">
+            <li class="social-link">
+              <button class="social-link__container social-link__container--footer">
+                <svg class="social-link__icon--footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </button>
             </li>
-            <li class="join-us__social-link social-link">
-              <button class="social-link__container social-link__container-footer">
-                <svg class="social-link__icon-footer" width="20" height="20">
+            <li class="social-link">
+              <button class="social-link__container social-link__container--footer">
+                <svg class="social-link__icon--footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </button>
             </li>
-            <li class="join-us__social-link social-link">
-              <button class="social-link__container social-link__container-footer">
-                <svg class="social-link__icon-footer" width="20" height="20">
+            <li class="social-link">
+              <button class="social-link__container social-link__container--footer">
+                <svg class="social-link__icon--footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </button>
             </li>
-            <li class="join-us__social-link social-link">
-              <button class="social-link__container social-link__container-footer">
-                <svg class="social-link__icon-footer" width="20" height="20">
+            <li class="social-link">
+              <button class="social-link__container social-link__container--footer">
+                <svg class="social-link__icon--footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </button>
@@ -342,7 +342,7 @@
               id="user_email"
               placeholder="E-mail"
             />
-            <button class="newsletter__button main-button" type="submit">
+            <button class="newsletter__button page-button" type="submit">
               Zapisz się
               <svg class="newsletter__icon-button" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
