@@ -1,4 +1,6 @@
 /* Modal + Backdrop */
+@use 'general-styles';
+
 .backdrop {
   flex-direction: column;
   align-items: center;
@@ -64,6 +66,7 @@
 }
 
 .order-form__button {
+  @extend %page-button;
   padding: 10px 76px;
   margin: 30px 124px 0;
 }

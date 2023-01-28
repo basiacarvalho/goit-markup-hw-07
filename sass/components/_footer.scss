@@ -1,4 +1,6 @@
 /*Footer*/
+@use 'general-styles';
+
 .contacts {
   line-height: 1.71;
   font-style: normal;
@@ -18,6 +20,7 @@
 }
 
 .footer-container {
+  @extend .container;
   display: flex;
   align-items: center;
   height: 252px;
@@ -44,11 +47,13 @@
   margin-right: 10px;
 }
 
-.logo--footer {
+.footer-logo {
+  @extend %logo;
   color: var(--main-color);
 }
 
 .newsletter__button {
+  @extend %page-button;
   display: flex;
   align-items: center;
   padding: 13px 28px 13px 42px;
