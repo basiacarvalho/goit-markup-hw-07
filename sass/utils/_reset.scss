@@ -1,6 +1,8 @@
+@use 'variables';
+
 body {
-  color: var(--text-color);
-  font-family: var(--main-font);
+  color: variables.$text-color;
+  font-family: variables.$main-font;
   font-size: 14px;
   letter-spacing: 0.03em;
 }

@@ -1,5 +1,6 @@
 /* Modal + Backdrop */
 @use 'general-styles';
+@use '../utils/variables';
 
 .backdrop {
   flex-direction: column;
@@ -12,13 +13,13 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: variables.$box-shadow-darker;
 }
 
 .modal {
-  background-color: var(--main-color);
+  background-color: variables.$main-color;
   border-radius: 4px;
-  box-shadow: var(--box-shadow);
+  box-shadow: variables.$box-shadow-lighter;
   height: 581px;
   width: 528px;
   transition: visibility 950ms ease-in-out, opacity 950ms ease-in-out, transform 950ms ease-in-out;
@@ -33,21 +34,19 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: var(--main-color);
+  background-color: variables.$main-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-
   &__button {
     border: none;
   }
-
   &__button * {
     position: absolute;
     top: 6px;
     right: 6px;
     width: 18px;
     height: 18px;
-    background-color: var(--main-color);
+    background-color: variables.$main-color;
     border: none;
     cursor: pointer;
   }
@@ -77,18 +76,18 @@
     top: 29px;
   }
   &__label {
-    color: var(--text-color);
+    color: variables.$text-color;
     font-size: 12px;
     letter-spacing: 0.01em;
     line-height: 1.16;
     margin-bottom: 4px;
   }
   &__link {
-    color: var(--active-color);
+    color: variables.$active-color;
     text-decoration: underline;
   }
   &__title {
-    color: var(--header-color);
+    color: variables.$header-color;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -114,8 +113,8 @@
     letter-spacing: 0.01em;
   }
   &:focus {
-    border-color: var(--active-color);
-    @extend %transition-border-color;
+    border-color: variables.$active-color;
+    transition: variables.$transition-border-color;
   }
 }
 
@@ -127,19 +126,19 @@
   outline: none;
   padding: 11px 0 11px 42px;
   &:focus {
-    border-color: var(--active-color);
-    @extend %transition-border-color;
+    border-color: variables.$active-color;
+    transition: variables.$transition-border-color;
   }
   &:focus-within + .order-form__icon {
-    fill: var(--active-color);
-    @extend %transition-fill;
+    fill: variables.$active-color;
+    transition: variables.$transition-fill;
   }
 }
 
 .order-form__statement {
   appearance: none;
   &-label {
-    color: var(--text-color);
+    color: variables.$text-color;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -162,7 +161,7 @@
     content: '';
     width: 16px;
     height: 15px;
-    border: 2px solid var(--header-color);
+    border: 2px solid variables.$header-color;
     border-radius: 2px;
     top: 3px;
     left: -3px;
