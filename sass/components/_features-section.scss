@@ -7,25 +7,25 @@
 
 .feature {
   width: 270px;
-}
 
-.feature__description {
-  line-height: 1.72;
-}
+  &__description {
+    line-height: 1.72;
+  }
 
-.feature__icon-container {
-  background-color: var(--background-color-light);
-  border-radius: 4px;
-  width: 270px;
-  height: 120px;
-  padding: 25px 100px;
-}
+  &__icon-container {
+    background-color: var(--background-color-light);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+  }
 
-.feature__title {
-  color: var(--header-color);
-  font-size: 14px;
-  line-height: 1.14;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  text-transform: uppercase;
+  &__title {
+    color: var(--header-color);
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
 }

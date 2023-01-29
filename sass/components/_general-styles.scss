@@ -4,7 +4,7 @@
   width: 1200px;
 }
 
-%link {
+.link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -12,15 +12,15 @@
   }
 }
 
-%logo {
+.logo {
   font-family: 'Raleway';
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-}
 
-.logo__accent {
-  color: var(--active-color);
+  &__accent {
+    color: var(--active-color);
+  }
 }
 
 %page-button {
@@ -38,19 +38,24 @@
 
 .section {
   padding: 94px 0;
-}
 
-.section-header {
-  font-size: 36px;
-  line-height: 1.17;
-  padding-bottom: 50px;
-  text-align: center;
-  color: var(--header-color);
+  &-header {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--header-color);
+  }
 }
 
 .social-links {
   display: flex;
   justify-content: space-between;
+}
+
+.social-link__icon {
+  fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link__container {
@@ -63,10 +68,23 @@
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    background-color: var(--active-color);
+  }
+
+  &:hover .social-link__icon,
+  &:focus .social-link__icon {
+    fill: var(--main-color);
+  }
 }
 
-.social-link__container:hover,
-.social-link__container:focus {
-  border-radius: 50%;
-  background-color: var(--active-color);
+%transition-fill {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%transition-border-color {
+  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
