@@ -5,10 +5,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-a,
-button {
+a {
   text-decoration: none;
-  padding: 0;
 }
 
 ul {
@@ -27,7 +25,7 @@ ul {
 }
 
 /* styles for all pages*/
-.container, .header-container, .footer-container, .banner__container {
+.container, .header__container, .footer-container, .banner__container {
   margin: 0 auto;
   width: 1200px;
 }
@@ -358,7 +356,7 @@ ul {
   color: #2196f3;
   fill: #2196f3;
 }
-.header-container {
+.header__container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

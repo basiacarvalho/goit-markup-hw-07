@@ -1,5 +1,5 @@
 /* Header */
-@use 'general-styles';
+@use '../utils/common';
 @use '../utils/variables';
 
 %header-menu {
@@ -41,7 +41,7 @@
       }
     }
   }
-  &-container {
+  &__container {
     @extend .container;
     align-items: center;
     display: flex;
