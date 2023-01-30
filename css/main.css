@@ -81,12 +81,12 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.social-links .social-link__icon, .social-links--footer .social-link__icon, .social-links--footer .social-link--footer__icon {
+.social-links .social-link__icon, .social-links--footer .social-link__icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-links .social-link__container, .social-links--footer .social-link__container, .social-links--footer .social-link--footer__container {
+.social-links .social-link__container, .social-links--footer .social-link__container {
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -97,11 +97,11 @@ ul {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-links .social-link__container:hover, .social-links--footer .social-link__container:hover, .social-links--footer .social-link--footer__container:hover, .social-links .social-link__container:focus, .social-links--footer .social-link__container:focus, .social-links--footer .social-link--footer__container:focus {
+.social-links .social-link__container:hover, .social-links--footer .social-link__container:hover, .social-links .social-link__container:focus, .social-links--footer .social-link__container:focus {
   border-radius: 50%;
   background-color: #2196f3;
 }
-.social-links .social-link__container:hover .social-link__icon, .social-links--footer .social-link__container:hover .social-link__icon, .social-links--footer .social-link--footer__container:hover .social-link__icon, .social-links .social-link__container:hover .social-links--footer .social-link--footer__icon, .social-links--footer .social-link__container:hover .social-link--footer__icon, .social-links--footer .social-link--footer__container:hover .social-link--footer__icon, .social-links .social-link__container:focus .social-link__icon, .social-links--footer .social-link__container:focus .social-link__icon, .social-links--footer .social-link--footer__container:focus .social-link__icon, .social-links .social-link__container:focus .social-links--footer .social-link--footer__icon, .social-links--footer .social-link__container:focus .social-link--footer__icon, .social-links--footer .social-link--footer__container:focus .social-link--footer__icon {
+.social-links .social-link__container:hover .social-link__icon, .social-links--footer .social-link__container:hover .social-link__icon, .social-links .social-link__container:focus .social-link__icon, .social-links--footer .social-link__container:focus .social-link__icon {
   fill: #fff;
 }
 
@@ -297,17 +297,31 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.social-links--footer .social-link--footer:not(:last-child) {
-  margin-right: 10px;
+.social-links--footer .social-link__icon {
+  fill: #fff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-links--footer .social-link--footer__container {
+.social-links--footer .social-link__container {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-links--footer .social-link--footer__icon {
+.social-links--footer .social-link__container:hover, .social-links--footer .social-link__container:focus {
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+.social-links--footer .social-link__container:hover .social-link__icon, .social-links--footer .social-link__container:focus .social-link__icon {
   fill: #fff;
+}
+.social-links--footer .social-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Header */

@@ -50,19 +50,17 @@
   }
 }
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
+@mixin social-icon($color, $fill) {
   .social-link {
     &__icon {
-      fill: variables.$icon-color;
+      fill: $fill;
       transition: variables.$transition-fill;
     }
     &__container {
       width: 44px;
       height: 44px;
       padding: 12px;
-      background-color: variables.$main-color;
+      background-color: $color;
       border-radius: 50%;
       border: none;
       cursor: pointer;
@@ -79,4 +77,10 @@
       }
     }
   }
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  @include social-icon(variables.$main-color, variables.$icon-color);
 }

@@ -80,19 +80,8 @@
 
 .social-links--footer {
   @extend .social-links;
-  & .social-link--footer:not(:last-child) {
+  @include common.social-icon(rgba(255, 255, 255, 0.1), variables.$main-color);
+  & .social-link:not(:last-child) {
     margin-right: 10px;
-  }
-  .social-link--footer {
-    &__container {
-      @extend .social-link__container;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      box-shadow: variables.$box-shadow-darker;
-    }
-    &__icon {
-      @extend .social-link__icon;
-      fill: variables.$main-color;
-    }
   }
 }
