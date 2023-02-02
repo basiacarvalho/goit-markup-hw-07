@@ -50,8 +50,8 @@
     border: none;
     cursor: pointer;
   }
-  &__button:hover .close-button__icon,
-  &__button:focus .close-button__icon {
+  &__button:hover &__icon,
+  &__button:focus &__icon {
     fill: variables.$active-color;
     transition: variables.$transition-fill;
   }
