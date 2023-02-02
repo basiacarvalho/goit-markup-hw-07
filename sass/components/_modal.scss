@@ -50,6 +50,11 @@
     border: none;
     cursor: pointer;
   }
+  &__button:hover .close-button__icon,
+  &__button:focus .close-button__icon {
+    fill: variables.$active-color;
+    transition: variables.$transition-fill;
+  }
 }
 
 .is-hidden,
